@@ -11,11 +11,18 @@ const testimonials = [
   },
   {
     name: "Mark S.",
-    image: "https://avatar.iran.liara.run/public/21",
+    image: "https://avatar.iran.liara.run/public/34",
     quote:
       "The best glue I’ve ever used. Strong, reliable, and fast-drying.",
   },
-  
+  {
+    name: "Alex T.",
+    image: "https://avatar.iran.liara.run/public/21",
+    quote:
+      "I’ve used many adhesives, but rightGLUE is by far the strongest and most versatile.",
+  },
+ 
+ 
 ];
 
 export default function TestimonialsCarousel() {

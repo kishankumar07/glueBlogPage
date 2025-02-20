@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Scrollbar */
+/* Hide scrollbar by default */
 ::-webkit-scrollbar {
   width: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Smooth transition for visibility */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -17,6 +19,17 @@
   background: #f1f1f1;
   border-radius: 10px;
 }
+
+/* Show scrollbar when scrolling */
+body::-webkit-scrollbar {
+  opacity: 1; /* Make the scrollbar visible while scrolling */
+}
+
+/* Detect scroll event and reveal scrollbar */
+body:hover::-webkit-scrollbar {
+  opacity: 1; /* Ensure it's visible when the user hovers anywhere */
+}
+
 
 /* globals.css or your component's CSS file */
 /* styles/globals.css or any relevant CSS file */
